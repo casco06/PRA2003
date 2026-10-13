@@ -1,85 +1,113 @@
-# PRA2003
-Name: Cas Coolen
-Student ID: i6413130
-Chemistry Themed Project 
-Questions:
--1: What are the average counts of each molecular species
-and their statistical uncertainties?
--2: Is there any asymmetry between the normal and the
-variant molecule?
--3: Is there any asymmetry as a function of their momentum?
 
-Question 1:
-The values below are the weigthed averages of the occurence of each molecule ID across 5M events split into 10 subsamples.
-The uncertainty was calculated by taking the standard deviation of the means for all subsamples.
 
-Results:
-3222: 0.14953040315799693 +/- 0.0006063822903933391
--3122: 0.27169916728644494 +/- 0.0009348123674006773
-211: 19.949556308899368 +/- 0.03106576179376513
--211: 19.917257123997253 +/- 0.030237707990851084
-321: 2.5091559778270263 +/- 0.00452871814381463
-2212: 1.2080367749960197 +/- 0.0017990168407428205
--2212: 1.1841653771001384 +/- 0.0022883792488439113
-310: 2.4771334163238206 +/- 0.005062715754942882
-130: 2.478430561372695 +/- 0.005332616683884886
-3122: 0.27660226960676876 +/- 0.001019263469390375
--3112: 0.14694775926357573 +/- 0.0005268675769813814
-3112: 0.1489626041765302 +/- 0.0005466195371052817
--3312: 0.039004230324167555 +/- 0.0003818290262320663
--3322: 0.03895379778970718 +/- 0.0002810413157172156
--3222: 0.1478012322015245 +/- 0.0005077271022564136
-3312: 0.0394429962610985 +/- 0.00026911867691313605
--3212: 0.15137462751771044 +/- 0.0007458148310844783
-3212: 0.1530980795981008 +/- 0.000541970887712472
-431: 0.011680591721752178 +/- 0.0001220635189581891
--431: 0.011736006928639369 +/- 0.0001577886845584461
-3322: 0.03921649366644618 +/- 0.00017223818349375804
-3334: 0.0011884125526735025 +/- 3.9537464581765634e-05
--531: 0.0009541402822744542 +/- 4.3581586794514795e-05
--3334: 0.0011535989893293526 +/- 4.818729437508582e-05
-4232: 0.0005907387777848652 +/- 2.773825052736268e-05
--4232: 0.000587986707038012 +/- 2.8330240323640608e-05
-531: 0.0009796135921167058 +/- 5.603069155408332e-05
--4132: 0.0005718122133368023 +/- 2.6362884241319027e-05
-4132: 0.0005801503602583782 +/- 3.3810768997815116e-05
--5132: 4.406953136871157e-05 +/- 9.302429642479586e-06
-5232: 5.356671200617856e-05 +/- 1.167617182010874e-05
-5132: 6.0287886097844365e-05 +/- 1.6062209704276354e-05
--5232: 5.535451768517327e-05 +/- 1.1048594948426555e-05
--4332: 1.775848966145227e-05 +/- 7.200486425138621e-06
-4332: 1.9997563119854696e-05 +/- 5.412373959099473e-06
--5332: 4.02247016793708e-06 +/- 1.7331716095700022e-06
--321: 2.5022140903735184 +/- 0.0038334664572049833
-5332: 4.76368113571336e-06 +/- 2.0412534002839815e-06
 
-Question 2:
-The mutatated variants were denoted with a negative ID so to compare asymetry, the difference between ID vs -ID was calculated.
-The calculation was done by making a list of mean differences across the 10 subsamples bewtween ID and -ID.
-There are 2 ID's that did not have a negative counterpart (310 and 130), so these were not compared.
-the standard deviation off the mean differences for each couple served as the uncertainty.
-Significance was calculated by abs(x)/uncertainty.
+# PRA2003 — Chemistry-Themed Project
 
-Results:
-3222 vs -3222: Significant within: 3.088 σ
-211 vs -211: Significant within: 7.534 σ
-321 vs -321: Significant within: 1.69 σ
-2212 vs -2212: Significant within: 10.605 σ
-3122 vs -3122: Significant within: 8.862 σ
-3112 vs -3112: Significant within: 4.672 σ
-3312 vs -3312: Significant within: 1.369 σ
-3212 vs -3212: Significant within: 2.38 σ
-431 vs -431: Significant within: 1.481 σ
-3322 vs -3322: Significant within: 1.658 σ
-3334 vs -3334: Significant within: 2.066 σ
-4232 vs -4232: Significant within: 1.425 σ
-531 vs -531: Significant within: 2.155 σ
-4132 vs -4132: Significant within: 1.942 σ
-5232 vs -5232: Significant within: 1.225 σ
-5132 vs -5132: Significant within: 1.058 σ
-4332 vs -4332: Significant within: 1.583 σ
-5332 vs -5332: Significant within: 1.225 σ
+**Name:** Cas Coolen  
+**Student ID:** i6413130
 
-Question 3:
-For lower momenta the error bars are small and they increase generally with momentum. Most data points and their error bars are consistent with 0. This means that in general there was no significant asymmetry between the normal and mutant ID's. (For the plots see the other files in the github.)
+## Research Questions
 
+1. What are the average counts of each molecular species, and what are their statistical uncertainties?
+2. Is there an asymmetry between the normal and variant molecules?
+3. Is there an asymmetry as a function of momentum?
+
+---
+
+## Question 1 — Average Counts and Statistical Uncertainties
+
+The values below are the weighted average counts of each molecular species across **5 million events**, split into 10 subsamples. The uncertainty was calculated as the standard deviation of the means across the subsamples.
+
+| Molecular ID | Average Count | Uncertainty |
+|---:|---:|---:|
+| 3222 | 0.149530 | 0.000606 |
+| -3122 | 0.271699 | 0.000935 |
+| 211 | 19.949556 | 0.031066 |
+| -211 | 19.917257 | 0.030238 |
+| 321 | 2.509156 | 0.004529 |
+| 2212 | 1.208037 | 0.001799 |
+| -2212 | 1.184165 | 0.002288 |
+| 310 | 2.477133 | 0.005063 |
+| 130 | 2.478431 | 0.005333 |
+| 3122 | 0.276602 | 0.001019 |
+| -3112 | 0.146948 | 0.000527 |
+| 3112 | 0.148963 | 0.000547 |
+| -3312 | 0.039004 | 0.000382 |
+| -3322 | 0.038954 | 0.000281 |
+| -3222 | 0.147801 | 0.000508 |
+| 3312 | 0.039443 | 0.000269 |
+| -3212 | 0.151375 | 0.000746 |
+| 3212 | 0.153098 | 0.000542 |
+| 431 | 0.011681 | 0.000122 |
+| -431 | 0.011736 | 0.000158 |
+| 3322 | 0.039216 | 0.000172 |
+| 3334 | 0.001188 | 0.000040 |
+| -531 | 0.000954 | 0.000044 |
+| -3334 | 0.001154 | 0.000048 |
+| 4232 | 0.000591 | 0.000028 |
+| -4232 | 0.000588 | 0.000028 |
+| 531 | 0.000980 | 0.000056 |
+| -4132 | 0.000572 | 0.000026 |
+| 4132 | 0.000580 | 0.000034 |
+| -5132 | 0.000044 | 0.000009 |
+| 5232 | 0.000054 | 0.000012 |
+| 5132 | 0.000060 | 0.000016 |
+| -5232 | 0.000055 | 0.000011 |
+| -4332 | 0.000018 | 0.000007 |
+| 4332 | 0.000020 | 0.000005 |
+| -5332 | 0.000004 | 0.000002 |
+| -321 | 2.502214 | 0.003833 |
+| 5332 | 0.000005 | 0.000002 |
+
+---
+
+## Question 2 — Asymmetry Between Molecular Variants
+
+The variants were identified by negative molecular IDs. To investigate asymmetry, the difference between each ID and its negative counterpart was calculated for each of the 10 subsamples.
+
+IDs **310** and **130** have no negative counterparts and were therefore excluded from this comparison.
+
+The standard deviation of the subsample differences was used as the uncertainty. Significance was calculated as
+
+\[
+z = \frac{|x|}{\sigma},
+\]
+
+where \(x\) is the mean difference and \(\sigma\) is its uncertainty.
+
+| Molecular IDs | Significance (\(\sigma\)) |
+|---|---:|
+| 3222 vs. -3222 | 3.088 |
+| 211 vs. -211 | 7.534 |
+| 321 vs. -321 | 1.690 |
+| 2212 vs. -2212 | 10.605 |
+| 3122 vs. -3122 | 8.862 |
+| 3112 vs. -3112 | 4.672 |
+| 3312 vs. -3312 | 1.369 |
+| 3212 vs. -3212 | 2.380 |
+| 431 vs. -431 | 1.481 |
+| 3322 vs. -3322 | 1.658 |
+| 3334 vs. -3334 | 2.066 |
+| 4232 vs. -4232 | 1.425 |
+| 531 vs. -531 | 2.155 |
+| 4132 vs. -4132 | 1.942 |
+| 5232 vs. -5232 | 1.225 |
+| 5132 vs. -5132 | 1.058 |
+| 4332 vs. -4332 | 1.583 |
+| 5332 vs. -5332 | 1.225 |
+
+---
+
+## Question 3 — Asymmetry as a Function of Momentum
+
+At lower momenta, the error bars are small and generally increase with momentum. Most data points and their error bars are consistent with zero, suggesting that there is generally no statistically significant asymmetry between the normal and variant molecular species as a function of momentum.
+
+The plots are provided below.
+
+### ID 321 vs. ID -321
+
+![Momentum-dependent asymmetry between 321 and -321](plot_321.png)
+
+### ID 3312 vs. ID -3312
+
+![Momentum-dependent asymmetry between 3312 and -3312](plot_3312.png)

@@ -106,8 +106,26 @@ The plots are provided below.
 
 ### ID 321 vs. ID -321
 
-![Momentum-dependent asymmetry between 321 and -321](plot_321.png)
+![Momentum-dependent asymmetry between 321 and -321](321.png)
 
 ### ID 3312 vs. ID -3312
+
+![Momentum-dependent asymmetry between 3312 and -3312](3312.png)
+
+### ID 211 vs. ID -211
+
+![Momentum-dependent asymmetry between 211 and -211](211.png)
+
+### ID 3122 vs. ID -3122
+
+![Momentum-dependent asymmetry between 3122 and -3122](3122.png)
+
+### ID 2212 vs. ID -2212
+
+![Momentum-dependent asymmetry between 2212 and -2212](2212.png)
+
+### ID 3334 vs. ID -3334
+
+![Momentum-dependent asymmetry between 3334 and -3334](3334.png)
 
 ![Momentum-dependent asymmetry between 3312 and -3312](plot_3312.png)

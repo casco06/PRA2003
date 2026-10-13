@@ -127,5 +127,3 @@ The plots are provided below.
 ### ID 3334 vs. ID -3334
 
 ![Momentum-dependent asymmetry between 3334 and -3334](3334.png)
-
-![Momentum-dependent asymmetry between 3312 and -3312](plot_3312.png)
